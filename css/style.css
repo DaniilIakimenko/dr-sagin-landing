@@ -1,0 +1,14 @@
+/* --- Variables --- */
+:root {
+  --bg-main: #ffffff;
+  --bg-alternate: #f5f5ff;
+  --color-main: #3379c2;
+  --color-heading: #34375a;
+  --color-text: #5d5f7b;
+
+  --section-title: 42px;
+  --section-subtitle: 18px;
+  --cards-heading: 24px;
+}
+
+/* --- Basic Styles --- */
