@@ -37,6 +37,7 @@ a {
 .section-title {
   margin-bottom: 40px;
   font-size: var(--section-title);
+  font-weight: 500;
   text-align: center;
   color: var(--color-main);
 }
@@ -87,7 +88,7 @@ a {
 .nav-link {}
 
 /* --- Hero Section --- */
-.hero-section {
+.hero {
   position: relative;
   background-color: var(--bg-alternate);
   overflow: hidden;
@@ -176,21 +177,20 @@ a {
 
 .hero-container {
   position: relative;
-  z-index: 10;
   display: flex;
   justify-content: space-between;
-  /* gap: 10vw; */
+  gap: 10vw;
 }
 
 .hero-info {
   align-self: center;
-  width: 40vw;
+  width: 45%;
 }
 
 .hero-title {
   margin-bottom: 20px;
-  font-size: 4.5vw;
-  line-height: 5vw;
+  font-size: 3vw;
+  line-height: 3.5vw;
   color: var(--color-heading);
 }
 
@@ -304,4 +304,47 @@ a {
   border: 10px solid var(--bg-main);
   border-radius: 50%;
   z-index: 2;
+}
+
+/* --- Services Section --- */
+.services {
+  background-color: var(--bg-alternate);
+}
+
+.services-container {
+  padding-block: 40px;
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.services-card {
+  flex-basis: calc(33.3% - 120px);
+  text-align: center;
+}
+
+.services-card-icon-wrapper {
+  width: 100px;
+  aspect-ratio: 1;
+  margin: 0 auto 40px auto;
+  border-radius: 20px;
+  box-shadow: 25px 25px 63px 0 rgba(102, 126, 234, 0.16);
+}
+
+.services-card-icon {
+}
+
+.services-card-title {
+  margin-bottom: 10px;
+  color: var(--color-heading);
+  font-size: var(--cards-heading);
+  font-weight: 500;
+}
+
+.services-card-desc {
 }
