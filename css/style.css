@@ -31,7 +31,7 @@ a {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px;
 }
 
 .section-title {
@@ -213,7 +213,7 @@ a {
   width: 30vw;
   aspect-ratio: 1;
   margin-right: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
   align-content: end;
 }
 
@@ -237,9 +237,7 @@ a {
 /* --- About Section --- */
 .about {}
 
-.about-container {
-  padding-block: 40px;
-}
+.about-container {}
 
 .about-content {
   display: flex;
@@ -311,9 +309,7 @@ a {
   background-color: var(--bg-alternate);
 }
 
-.services-container {
-  padding-block: 40px;
-}
+.services-container {}
 
 .services-content {
   display: flex;
@@ -336,8 +332,7 @@ a {
   box-shadow: 25px 25px 63px 0 rgba(102, 126, 234, 0.16);
 }
 
-.services-card-icon {
-}
+.services-card-icon {}
 
 .services-card-title {
   margin-bottom: 10px;
@@ -346,5 +341,33 @@ a {
   font-weight: 500;
 }
 
-.services-card-desc {
+.services-card-desc {}
+
+/* --- Reviews Section --- */
+.swiper {
+  width: 80%;
+}
+
+.swiper-slide {
+  width: 30vw;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+  object-position: center;
+}
+
+.swiper-pagination {
+  --swiper-pagination-bottom: 0;
+  --swiper-pagination-color: #34375a;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-color: #34375a;
 }
