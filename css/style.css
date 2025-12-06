@@ -23,6 +23,10 @@ body {
   background-color: var(--bg-main);
 }
 
+hr {
+  opacity: .5;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -370,4 +374,52 @@ a {
 .swiper-button-prev,
 .swiper-button-next {
   --swiper-navigation-color: #34375a;
+}
+
+/* --- FAQ Section --- */
+.faq {
+  background-color: var(--bg-alternate);
+}
+
+.accordion-trigger {
+  position: relative;
+  width: 100%;
+  padding: 20px 25px;
+  text-align: left;
+  color: var(--color-heading);
+  font-size: var(--cards-heading);
+  background-color: transparent;
+  border: none;
+}
+
+.accordion-sign {
+  position: absolute;
+  top: 38px;
+  right: 25px;
+  width: 16px;
+  height: 2px;
+  background-color: var(--color-heading);
+  transition: all .3s cubic-bezier(.55, .09, .68, .53);
+}
+
+.accordion-sign:nth-child(2) {
+  transform: rotate(90deg);
+}
+
+.accordion-item.is-active .accordion-sign:nth-child(1) {
+  transform: rotate(180deg);
+}
+
+.accordion-item.is-active .accordion-sign:nth-child(2) {
+  transform: rotate(180deg);
+}
+
+.accordion-panel {
+  overflow: hidden;
+}
+
+.accordion-text {
+  padding: 20px 25px;
+  font-size: var(--section-subtitle);
+  line-height: 32px;
 }

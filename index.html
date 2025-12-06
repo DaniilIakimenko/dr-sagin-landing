@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.css">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -168,7 +169,52 @@
     </div>
   </section>
 
+  <section class="faq">
+    <div class="container faq-container">
+      <h2 class="section-title">Ответы на вопросы</h2>
+
+      <div class="accordion-wrapper">
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            Вопрос1
+            <span class="accordion-sign"></span>
+            <span class="accordion-sign"></span>
+          </button>
+          <div class="accordion-panel">
+            <p class="accordion-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, perspiciatis.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            Вопрос2
+            <span class="accordion-sign"></span>
+            <span class="accordion-sign"></span>
+          </button>
+          <div class="accordion-panel">
+            <p class="accordion-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, perspiciatis.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div class="accordion-item">
+          <button type="button" class="accordion-trigger">
+            Вопрос3
+            <span class="accordion-sign"></span>
+            <span class="accordion-sign"></span>
+          </button>
+          <div class="accordion-panel">
+            <p class="accordion-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique, perspiciatis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/accordion-js@3.4.1/dist/accordion.min.js"></script>
   <script src="script.js"></script>
 </body>
 
