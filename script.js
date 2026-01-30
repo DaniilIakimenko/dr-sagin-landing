@@ -1,3 +1,24 @@
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+// Мобильное меню
+if (menuToggle) {
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    nav.classList.toggle('active');
+    document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+  });
+
+  // Закрытие меню при клике на ссылку
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      menuToggle.classList.remove('active');
+      nav.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+}
+
 // Добавляем круги для разделителя
 document.addEventListener('DOMContentLoaded', function () {
   const divider = document.querySelector('.about-divider');
@@ -17,7 +38,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: 1,
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
@@ -32,6 +53,14 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  }
 });
 
 // Accordion for FAQ
